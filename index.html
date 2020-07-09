@@ -91,13 +91,9 @@
               <p align="center">
                 <name>Nishad Gothoskar</name>
               </p>
-        <p>I am a research engineer at <a href="http://www.vicarious.com">Vicarious AI</a> where I work on Robotics and AI. By combining insights from neuroscience and probabilistic generative modeling, we seek to design algorithms that can match humans' ability to learn and generalize.</p>
+        <p>I am a first-year PhD Student at MIT where I work in the <a href="http://probcomp.csail.mit.edu/">Probabilistic Computing Group</a> and am advised by Vikash Mansinghka and Josh Tenenbaum. I am interested in building intelligence for robots. By combining insights from the cognitive and neuro sciences with probabilistic generative models and Bayesian inference, I seek to design algorithms that can match humans' ability to learn and generalize.</p>
 
-        <p>From 2014-2017 I was an undergraduate at <a href="https://scs.cmu.edu">CMU SCS</a>, where I studied Math and Computer Science. I did summer internships at <a href="http://www.zspace.com">zSpace</a>, <a href="https://www.google.com">Google</a>, and <a href="https://www.uber.com/info/atg/">Uber ATG</a>. I did research on mobile privacy, activity recognition, and search-based planning algorithms.</p>
-
-        <p>I was an engineer at <a href="https://www.uber.com/info/atg/">Uber ATG</a>, where I built prediction systems for autonomous vehicles, advised by Jeff Schneider and Ian Dewancker. My contributions were in predicting interactions between vehicles/bikers/pedestrains.</p>
-
-        <p>I was a visiting research associate at MIT CSAIL in the <a href="http://lis.csail.mit.edu/new/">Learning and Intelligent Systems</a> Group. I was advised by Leslie Pack Kaelbling and Tomas Lozano Perez. I implemented a Task and Motion Planning system that can learn primitives and plan.</p>
+        <p>For the years before I joined MIT, I was a research engineer at <a href="http://vicarious.com">Vicarious AI</a> where I was advised by Dileep George and Miguel L&aacute;zaro-Gredilla. My research was on sequence learning models, approximate inference, and generative models applied to robotics. I have also worked for short periods at Uber ATG, Google, and MIT. I received my undergraduate degree from <a href="https://scs.cmu.edu">Carnegie Mellon</a>, where I studied math and computer science.</p>
 
         </p>
             </td>
@@ -119,20 +115,56 @@
           <tr>
             <td width="25%">
               <div class="one">
+                <div class="two"><img src='assets/ant.png' width="160" height="160"></div>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+            <a href="https://arxiv.org/pdf/2006.06620.pdf"><papertitle>From proprioception to long-horizon planning in
+novel environments: A hierarchical RL model</papertitle></a>
+              <br> <strong>N. Gothoskar</strong>, M. Lázaro-Gredilla, D. George <br>
+              <em>arXiv</em>
+
+              <p></p>
+              <p>In this
+work, we introduce a simple, three-level hierarchical architecture that reflects these
+distinctions. The low-level controller operates on the continuous proprioceptive
+inputs, using model-free learning to acquire useful behaviors. These in turn induce
+a set of mid-level dynamics, which are learned by the mid-level controller and used
+for model-predictive control, to select a behavior to activate at each timestep. The
+high-level controller leverages a discrete, graph representation for goal selection
+and path planning to specify targets for the mid-level controller.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%">
+              <div class="one">
+                <div class="two"><img src='assets/query.png' width="160" height="160"></div>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+            <a href="https://arxiv.org/abs/2006.06803"><papertitle>Query Training: Learning and inference for directed and undirected graphical models</papertitle></a>
+              <br> M. Lazaro-Gredilla, W. Lehrach, <strong>N. Gothoskar</strong>, A. Dedieu, G. Zhou<br>
+              <em>arXiv</em>
+
+              <p></p>
+              <p>We introduce Query Training (QT), a systematic method to turn any PGM structure (directed or not, with or without hidden variables) into a trainable inference network. This single network can approximate any inference query. We demonstrate experimentally that QT can be used to learn a challenging 8-connected grid Markov random field with hidden variables and that it consistently outperforms the state-of-the-art AdVIL when tested on three undirected models across multiple datasets.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%">
+              <div class="one">
                 <div class="two"><img src='assets/robot.jpg' width="160" height="160"></div>
               </div>
             </td>
             <td valign="middle" width="75%">
-            <a href="https://arxiv.org/pdf/2003.04474.pdf"><papertitle>Learning a generative model for robot control using visual feedback</papertitle></a>
-              <br>
-              <strong>N. Gothoskar</strong>, M. Lazaro-Gredilla, A. Agarwal, Y. Bekiroglul, D. George
-              <br>
+            <a href="https://arxiv.org/abs/2003.04474"><papertitle>Uncalibrated Visual Servoing</papertitle></a>
+              <br> <strong>N. Gothoskar</strong>, M. Lazaro-Gredilla, A. Agarwal, Y. Bekiroglu, D. George <br>
               <em>arXiv</em>
+
               <p></p>
-              <p>We introduce a novel formulation for incorporating visual feedback in controlling robots. We define a generative model
-from actions to image observations of features on the end-effector. Inference in the model allows us to infer the robot
-state corresponding to target locations of the features. This, in turn, guides motion of the robot and allows for matching
-the target locations of the features in significantly fewer steps than state-of-the-art visual servoing methods.</p>
+              <p>Developed a method for learning to control a robot using visual feedback with no calibration or prior information about the setup.</p>
             </td>
           </tr>
 
