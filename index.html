@@ -7,18 +7,18 @@
   <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
   <style type="text/css">
     /* Color scheme stolen from Sergey Karayev */
-
+    
     a {
       color: #1772d0;
       text-decoration: none;
     }
-
+    
     a:focus,
     a:hover {
       color: #f09228;
       text-decoration: none;
     }
-
+    
     body,
     td,
     th,
@@ -28,34 +28,34 @@
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
       font-size: 14px
     }
-
+    
     strong {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
       font-size: 14px;
     }
-
+    
     heading {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
       font-size: 22px;
     }
-
+    
     papertitle {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
       font-size: 14px;
       font-weight: 700
     }
-
+    
     name {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
       font-size: 32px;
     }
-
+    
     .one {
       width: 160px;
       height: 160px;
       position: relative;
     }
-
+    
     .two {
       width: 160px;
       height: 160px;
@@ -64,13 +64,13 @@
       -moz-transition: opacity .2s ease-in-out;
       -webkit-transition: opacity .2s ease-in-out;
     }
-
+    
     .fade {
       transition: opacity .2s ease-in-out;
       -moz-transition: opacity .2s ease-in-out;
       -webkit-transition: opacity .2s ease-in-out;
     }
-
+    
     span.highlight {
       background-color: #ffffd0;
     }
@@ -91,14 +91,23 @@
               <p align="center">
                 <name>Nishad Gothoskar</name>
               </p>
-        <p>I am a first-year PhD Student at MIT where I work in the <a href="http://probcomp.csail.mit.edu/">Probabilistic Computing Group</a> and am advised by Vikash Mansinghka and Josh Tenenbaum. I am interested in building intelligence for robots. By combining insights from the cognitive and neuro sciences with probabilistic generative models and Bayesian inference, I seek to design algorithms that can match humans' ability to learn and generalize.</p>
+        <p >I am a second-year PhD Student at MIT at the  <a href="http://probcomp.csail.mit.edu">Probabilistic Computing Project</a> in CSAIL. I am co-advised by <a href="http://probcomp.csail.mit.edu/principal-investigator/">Vikash Mansinghka</a> and <a href="http://web.mit.edu/cocosci/josh.html">Josh Tenenbaum</a>. Previously I was a researcher at <a href="http://vicarious.com">Vicarious AI</a> where I worked with Miguel L&aacute;zaro-Gredilla and Dileep George. In Dec. 2017, I recieved a BS in Computer Science and Math from CMU.
 
-        <p>For the years before I joined MIT, I was a research engineer at <a href="http://vicarious.com">Vicarious AI</a> where I was advised by Dileep George and Miguel L&aacute;zaro-Gredilla. My research was on sequence learning models, approximate inference, and generative models applied to robotics. I have also worked for short periods at Uber ATG, Google, and MIT. I received my undergraduate degree from <a href="https://scs.cmu.edu">Carnegie Mellon</a>, where I studied math and computer science.</p>
 
-        </p>
+
+        <br><br>
+          My research aims to build robots that can learn and generalize as rapidly and efficiently as humans. Humans have rich prior knowledge and inductive biases about the structure of the world, and they leverage this understanding when making inferences from data. To build AI systems as flexible as humans, we must understand what these priors and biases are, how our brains represent them, and how we use them. To the end, I study probabilistic generative models and how we can used them to improve data-efficiency, robustness, and generalizability of robotic systems.
+        <br><br>
+
+          Contact me at nishad AT mit DOT edu
+        <br><br>
+
+          [<a href="https://scholar.google.com/citations?user=RikRyq4AAAAJ&hl=en">Google Scholar</a>]
+          [<a href="https://www.linkedin.com/in/nishadg/">LinkedIn</a>]
+
             </td>
             <td width="33%">
-              <img src="assets/website.png" width="300" height="300">
+              <img src="assets/website.png" width="350" height="350">
             </td>
           </tr>
         </table>
@@ -112,139 +121,87 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
+
+
           <tr>
             <td width="25%">
               <div class="one">
-                <div class="two"><img src='assets/ant.png' width="160" height="160"></div>
+                <div class="two"><img src='assets/3dp3.png' width="160" vspace="20"></div>
               </div>
             </td>
             <td valign="middle" width="75%">
-            <a href="https://arxiv.org/pdf/2006.06620.pdf"><papertitle>From proprioception to long-horizon planning in
-novel environments: A hierarchical RL model</papertitle></a>
-              <br> <strong>N. Gothoskar</strong>, M. Lázaro-Gredilla, D. George <br>
-              <em>arXiv</em>
-
+                <papertitle>3DP3: 3D Scene Perception via Probabilistic Programs</papertitle>
+              <br>
+              <strong>Nishad Gothoskar</strong>, Marco Cusumano-Towner, Ben Zinberg, Matin Ghavamizadeh, Falk Pollok, Austin Garrett, Dan Gutfreund, Joshua B. Tenenbaum, Vikash Mansinghka
+              <br>
+              <em>NeurIPS</em>, 2021
+              <br>
+              [Coming soon!]
+              <br>
               <p></p>
-              <p>In this
-work, we introduce a simple, three-level hierarchical architecture that reflects these
-distinctions. The low-level controller operates on the continuous proprioceptive
-inputs, using model-free learning to acquire useful behaviors. These in turn induce
-a set of mid-level dynamics, which are learned by the mid-level controller and used
-for model-predictive control, to select a behavior to activate at each timestep. The
-high-level controller leverages a discrete, graph representation for goal selection
-and path planning to specify targets for the mid-level controller.</p>
+              <p>We propose a generative probabilistic programming-based architecture for modeling 3D objects and scenes, and use our architecture to do accurate and robust object pose estimation from RGBD images.</p>
             </td>
           </tr>
 
-          <tr>
-            <td width="25%">
-              <div class="one">
-                <div class="two"><img src='assets/query.png' width="160" height="160"></div>
-              </div>
-            </td>
-            <td valign="middle" width="75%">
-            <a href="https://arxiv.org/abs/2006.06803"><papertitle>Query Training: Learning and inference for directed and undirected graphical models</papertitle></a>
-              <br> M. Lazaro-Gredilla, W. Lehrach, <strong>N. Gothoskar</strong>, A. Dedieu, G. Zhou<br>
-              <em>arXiv</em>
 
-              <p></p>
-              <p>We introduce Query Training (QT), a systematic method to turn any PGM structure (directed or not, with or without hidden variables) into a trainable inference network. This single network can approximate any inference query. We demonstrate experimentally that QT can be used to learn a challenging 8-connected grid Markov random field with hidden variables and that it consistently outperforms the state-of-the-art AdVIL when tested on three undirected models across multiple datasets.</p>
-            </td>
-          </tr>
 
           <tr>
             <td width="25%">
               <div class="one">
-                <div class="two"><img src='assets/robot.jpg' width="160" height="160"></div>
+                <div class="two"><img src='assets/cscg.png' width="160" vspace="20"></div>
               </div>
             </td>
             <td valign="middle" width="75%">
-            <a href="https://arxiv.org/abs/2003.04474"><papertitle>Uncalibrated Visual Servoing</papertitle></a>
-              <br> <strong>N. Gothoskar</strong>, M. Lazaro-Gredilla, A. Agarwal, Y. Bekiroglu, D. George <br>
-              <em>arXiv</em>
-
-              <p></p>
-              <p>Developed a method for learning to control a robot using visual feedback with no calibration or prior information about the setup.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td width="25%">
-              <div class="one">
-                <div class="two"><img src='assets/maze.gif' width="160" height="160"></div>
-              </div>
-            </td>
-            <td valign="middle" width="75%">
-            <a href="https://www.biorxiv.org/content/10.1101/864421v1" target="_blank">
-                <papertitle>Learning cognitive maps from vicarious trial and error</papertitle>
+            <a href="https://www.nature.com/articles/s41467-021-22559-5">
+                <papertitle>Clone-structured graph representations enable flexible learning and vicarious evaluation of cognitive maps</papertitle>
             </a>
               <br>
-              R. Rikhye, <strong>N. Gothoskar</strong>, S. Guntupalli, A. Dedieu, M. Lazaro-Gredilla, D. George
+              Dileep George, Rajeev V. Rikhye, <strong>Nishad Gothoskar</strong>,J. Swaroop Guntupalli, Antoine Dedieu, Miguel Lazaro-Gredilla
               <br>
-              <em>bioRxiv</em>
+              <em>Nature Communications</em>, 2021
+              <br>
+              [<a href="https://scholar.googleusercontent.com/scholar.bib?q=info:cyoS-GASjQMJ:scholar.google.com/&output=citation&scisdr=CgXCw_0XEISKjuHZv5Y:AAGBfm0AAAAAYWDfp5ZTo07YBXepAFG7pcbzcSm7G1dc&scisig=AAGBfm0AAAAAYWDfp-gHgR-LU8sJQ01yC2bA1ZMSMlM4&scisf=4&ct=citation&cd=-1&hl=en">BibTeX</a>]
+              [<a href="https://www.nature.com/articles/s41467-021-22559-5.pdf">PDF</a>]
+              <br>
               <p></p>
-              <p>Cognitive maps enable us to learn the layout of environments, encode and retrieve episodic memories, and navigate vicariously for mental evaluation of options.</p>
+              <p>Cognitive maps are mental representations of spatial and conceptual relationships in an environment, and are critical for flexible behavior. To form these abstract maps, the hippocampus has to learn to separate or merge aliased observations appropriately in different contexts in a manner that enables generalization and efficient planning. Here we propose a specific higher-order graph structure, clone-structured cognitive graph (CSCG), which forms clones of an observation for different contexts as a representation that addresses these problems.</p>
             </td>
           </tr>
+
+
 
           <tr>
             <td width="25%">
               <div class="one">
-                <div class="two"><img src='assets/graph.png' width="160" height="160"></div>
+                <div class="two"><img src='assets/query.png' width="160" vspace="20"></div>
               </div>
             </td>
             <td valign="middle" width="75%">
-            <a href="https://arxiv.org/abs/1905.00507" target="_blank">
-                <papertitle>Learning higher-order sequential structure with cloned HMMs</papertitle>
+            <a href="https://arxiv.org/abs/2006.06803">
+                <papertitle>Query Training: Learning a Worse Model to Infer Better Marginals in Undirected Graphical Models with Hidden Variables
+</papertitle>
             </a>
               <br>
-              A. Dedieu, <strong>N. Gothoskar</strong>, S. Swingle, W. Lehrach, M. Lazaro-Gredilla, D. George
+              Miguel Lazaro-Gredilla, Wolfgang Lehrach, <strong>Nishad Gothoskar</strong>, Guangyao Zhou, Antoine Dedieu, Dileep George
               <br>
-              <em>arXiv</em>
+              <em>AAAI</em>, 2021
+              <br>
+              [<a href="https://scholar.googleusercontent.com/scholar.bib?q=info:70Y60ngXe3YJ:scholar.google.com/&output=citation&scisdr=CgXCw_0XEISKjuHnPH0:AAGBfm0AAAAAYWDhJH2D7QfC3l5CxCoy7tNRCH3pBWgQ&scisig=AAGBfm0AAAAAYWDhJMqo3y2Je3KWRCwre0plJLddGf_3&scisf=4&ct=citation&cd=-1&hl=en">BibTeX</a>]
+              [<a href="https://arxiv.org/pdf/2006.06803.pdf">PDF</a>]
+              <br>
               <p></p>
-              <p>CHMMs are a constrained version of HMMs with a simple sparsity structure that enforces many hidden states to map deterministically to the same emission state. We demonstrate the effectiveness of this model in various data domains.</p>
+              <p>Probabilistic graphical models (PGMs) provide a compact
+representation of knowledge that can be queried in a flexible
+way: after learning the parameters of a graphical model once,
+new probabilistic queries can be answered at test time without retraining. However, when using undirected PGMS with
+hidden variables, two sources of error typically compound
+in all but the simplest models (a) learning error (both computing the partition function and integrating out the hidden
+variables is intractable); and (b) prediction error (exact inference is also intractable). Here we introduce query training
+(QT), a mechanism to learn a PGM that is optimized for the
+approximate inference algorithm that will be paired with it.</p>
             </td>
           </tr>
 
-          <tr>
-            <td width="25%">
-              <div class="one">
-                <div class="two"><img src='assets/ext.jpeg' width="160" height="160"></div>
-              </div>
-            </td>
-            <td valign="middle" width="75%">
-            <papertitle>Predicting interactions for autonomous vehicles</papertitle>
-              <br>
-              <em>Uber Advanced Technologies Group</em>
-
-              <p></p>
-              <p>Worked on road user trajectory prediction to enable planning. I built system for modeling interactions between road users.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td width="25%">
-              <div class="one">
-                <div class="two"><img src='assets/privacy.png' width="160" height="160"></div>
-              </div>
-            </td>
-            <td valign="middle" width="75%">
-            <a href="https://www.synergylabs.org/yuvraj/docs/Chitkara_Ubicomp2017_ContextAwarePrivacy.pdf" target="_blank">
-                <papertitle>Does this App Really Need My Location?</papertitle>
-            </a>
-              <br>
-              S. Chitkara, <strong>N. Gothoskar</strong>, S. Harish, J. Hong, Y. Agarwal
-              <br>
-              <em>Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (ACM IMWUT)</em>
-              <br>
-              [<a href="http://www.android.protectmyprivacy.org/">Website</a>]
-              [<a href="https://www.cmu.edu/news/stories/archives/2017/september/smartphone-privacy.html">Press</a>]
-              [<a href="https://cheddar.com/videos/protecting-your-personal-information-from-nosey-apps">Interview</a>]
-              <br>
-              <p></p>
-              <p>Mobile applications prey on user's sensitive data. We developed an application that monitors the flow of private information and protects their data from being leaked.</p>
-            </td>
-          </tr>
 
         </td>
     </tr>
